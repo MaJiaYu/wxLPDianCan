@@ -6,6 +6,9 @@
   <view class='btn' wx:for-items="{{classifyList}}" wx:key="{{classifyList}}">
     <view class='classifyBtn'>{{item}}</view>
   </view>
+   <view class='btn' wx:for-items="{{classifyList}}" wx:key="{{classifyList}}">
+    <view class='classifyBtn'>{{item}}</view>
+  </view>
 </view>
 <!--菜单  -->
 <scroll-view class='dishesPart'>
