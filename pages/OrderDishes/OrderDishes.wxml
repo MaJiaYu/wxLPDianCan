@@ -3,9 +3,6 @@
 <!--选择菜品  -->
 <!--分类  -->
 <view class='classify'>
-  <view class='btn' wx:for-items="{{classifyList}}" wx:key="{{classifyList}}">
-    <view class='classifyBtn'>{{item}}</view>
-  </view>
    <view class='btn' wx:for-items="{{classifyList}}" wx:key="{{classifyList}}">
     <view class='classifyBtn'>{{item}}</view>
   </view>
