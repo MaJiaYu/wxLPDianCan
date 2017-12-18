@@ -1,0 +1,29 @@
+/* pages/MakeSureOrder/MakeSureOrder.wxss */
+
+.viewClass {
+  width: 100%;
+  margin-top: 5px;
+  background-color: white;
+  color: gray;
+  position: relative;
+}
+
+.submitBtn {
+  background-color: #cd5c5c;
+  color: white;
+  width: 30%;
+  position: absolute;
+  height: 40px;
+  right: 0;
+  font-size: medium;
+  display: inline-block;
+}
+
+.footer {
+  position: fixed;
+  height: 40px;
+  background-color: white;
+  border: 1px solid #cd5c5c;
+  width: 100%;
+  bottom: 0;
+}

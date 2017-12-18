@@ -1,0 +1,242 @@
+/* pages/OrderDishes/OrderDishes.wxss */
+
+.classify {
+  position: fixed;
+  left: 0;
+  float: left;
+  /*background-color: lightblue;*/
+  color: gray;
+  width: 30%;
+  align-items: center;
+  height: 700px;
+  text-align: center;
+  color: white;
+  background-color: #d9d9f3;
+}
+
+.dishesPart {
+  position: relative;
+  float: right;
+  width: 70%;
+  /* height: 700px; */
+  background-color: white;
+}
+
+.dishes {
+  width: 100%;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-left: none;
+  height: 110px;
+}
+
+.dishesInfo {
+  margin: 5px 10px;
+  position: absolute;
+  float: left;
+  display: inline;
+  font-size: medium;
+  color: #cd5c5c;
+}
+
+.dishesTitle {
+  font-size: medium;
+  color: gray;
+  font: bold;
+}
+
+.dishesPrice {
+  line-height: 100px;
+  font-size: medium;
+  display: block;
+}
+
+.dishesImg {
+  position: relative;
+  margin: 5px 5px;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  float: right;
+}
+
+/*分类的按钮  */
+
+.classifyBtn {
+  height: 40px;
+  background-color: white;
+  border: 1px solid lightgray;
+  margin: 0px 0px;
+  color: gray;
+  line-height: 40px;
+}
+
+.cartInfo {
+  position: fixed;
+  left: 0;
+  width: 70%;
+  height: 40px;
+  background-color: white;
+  color: gray;
+  text-align: right;
+  line-height: 40px;
+  padding-right: 50px;
+}
+
+.OrderBtn {
+  right: 0;
+  position: fixed;
+  height: 40px;
+  width: 30%;
+  align-items: center;
+  text-align: center;
+  background-color: #cd5c5c;
+  line-height: 40px;
+}
+
+.Batching {
+  position: fixed;
+  /* background-color: white; */
+  width: 100%;
+  right: 0;
+  height: 100%;
+}
+
+.BatchingBackBtn {
+  position: absolute;
+  /* background-color: yellow;  */
+  height: 100%;
+  width: 20%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.BatchingInfo {
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  right: 0;
+  background-color: white;
+}
+
+.BatchINP {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.BatchChoose {
+  position: absolute;
+  top: 37%;
+  width: 100%;
+}
+
+.section {
+  margin-left: 10px;
+}
+
+.BatchItem {
+  display: inline-block;
+  margin-top: 5px;
+  height: 30px;
+  font-size: small;
+  margin-left: 15px;
+  text-align: center;
+}
+
+.BatchImage {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  background-color: red;
+  display: block;
+}
+
+.BatchNameAndPrice {
+  position: relative;
+  top: 31%;
+  margin-left: 10px;
+}
+
+.icon {
+  position: absolute;
+  top: 40%;
+  color: red;
+  opacity: 1;
+  left: 35%;
+}
+
+.BatchFooter {
+  position: fixed;
+  right: 0;
+  width: 80%;
+  height: 40px;
+  background-color: #cd5c5c;
+  bottom: 0;
+  color: white;
+  text-align: center;
+}
+
+.NextBtn {
+  text-align: center;
+}
+
+.cart {
+  position: absolute;
+  left: 3%;
+  top: 13%;
+  background-color: #cd5c5c;
+  color: white;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 50px 50px;
+}
+
+.cartBar {
+  width: 100%;
+  background-color: #cd5c5c;
+  min-height: 25px;
+  color: white;
+}
+
+.cartDetail {
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  min-height: 100px;
+  margin-bottom: 40px;
+  color: gray;
+  max-height: 400px;
+  font-size: medium;
+   overflow-y: scroll;
+}
+
+.cartItem {
+  position: relative;
+  border-bottom: 0.5px solid lightgray;
+  height: 40px;
+  line-height: 37px;
+   overflow-y: scroll;
+}
+
+.hover-class {
+  background-color: #cd5c5c;
+  color: white;
+}
+
+/*  */
+
+.pull-right {
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+}
+
+.pull-left {
+  position: absolute;
+  left: 0;
+  margin-left: 10px;
+}

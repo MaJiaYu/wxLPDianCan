@@ -1,0 +1,21 @@
+<view class='backgroundClass'></view>
+<view class='viewClass' wx:for='{{NowCart}}' wx:key='{{index}}'>
+  <view style='margin-left:10px'>
+    <text>{{item.name}}</text>
+    <view style='display:inline-block;height:30px;position:absolute;right:0;margin-right:10px'>
+   1
+    </view>
+  </view>
+  <view style='margin-left:10px'>
+    <text style='font-size:medium;color:#cd5c5c'>{{item.price}}元/{{item.unit}}</text>
+  </view>
+  <view style='margin-left:10px'>
+    <text style='font-size:small'>详情</text>
+  </view>
+</view>
+
+<view style='height:50px'></view>
+<view class='footer'>
+  <text style='line-height:35px'>份数 总计：金额</text>
+  <button class='submitBtn' bindtap='clickNext'>提交</button>
+</view>

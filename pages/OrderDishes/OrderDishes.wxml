@@ -1,0 +1,85 @@
+<!--pages/OrderDishes/OrderDishes.wxml-->
+
+<!--选择菜品  -->
+<!--分类  -->
+<view class='classify'>
+  <view class='btn' wx:for-items="{{classifyList}}" wx:key="{{classifyList}}">
+    <view class='classifyBtn'>{{item}}</view>
+  </view>
+</view>
+<!--菜单  -->
+<scroll-view class='dishesPart'>
+  <view class='dishes' wx:for="{{dishes}}" wx:key="{{dishes.id}}" data-index='{{index}}' data-food='{{item}}' bindtap="clickDishes">
+    <view class='dishesInfo'>
+      <text class='dishesTitle'>{{item.name}}</text>
+      <text class='dishesPrice'>{{item.price}}元/{{item.unit}}</text>
+    </view>
+    <image src='{{item.imgSrc}}' class='dishesImg'></image>
+  </view>
+  <view style='height:100px'></view>
+</scroll-view>
+<!--选择菜品/////  -->
+
+<!--菜品明细选择  -->
+<view class='Batching' hidden='{{isHidden}}'>
+  <!--返回按钮  -->
+  <view class='BatchingBackBtn' bindtap='clickDelBatch'>
+    <icon type='cancel' class='icon'></icon>
+  </view>
+
+  <!--选择拦  -->
+  <view class='BatchingInfo'>
+    <!--菜品明细信息拦，图片、名字、价格  -->
+    <view class='BatchINP'>
+      <image class='BatchImage' src='{{ChoosedDishes.imgSrc}}'></image>
+      <text class='BatchNameAndPrice'>{{ChoosedDishes.name}}</text>
+      <text class='BatchNameAndPrice'>{{ChoosedDishes.price}}元/{{ChoosedDishes.unit}}</text>
+    </view>
+    <!--菜品明细选项项目  -->
+    <view class='BatchChoose'>
+      <view class="section">
+        <view wx:for="{{ChoosedDishes.Burden}}" wx:key="{{index}}">
+          <text style='font-size:small;margin-bottom:10px'>{{item.name}}</text>
+          <view style="flex-direction:row;margin-top:10px">
+            <button class='BatchItem' data-batch='{{burdenList}}' data-batchIndex='{{ChoosedDishes.Burden.index}}' data-id='{{index}}' data-batchListIndex='{{index}}' bindtap='bindBatch' style='background-color:{{burdenList.isPress}}' wx:for='{{item.burdenList}}'
+              wx:for-item='burdenList' wx:key='{{index}}' style="{{index == id?'background-color:#cd5c5c;color:white':'background-color:white;'}}">{{burdenList.value}}{{burdenList.isPress}}</button>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!--菜品明细确定按钮  -->
+    <view class='BatchFooter'>
+      <text style='line-height:40px;font-size:small'>确定</text>
+    </view>
+  </view>
+</view>
+<!--菜品明细选择 ///// -->
+
+<!--购物车  -->
+<view class='footer' style='text-align:center;height:100%;width:100%;border:none;color:black; background-color: rgba(0, 0, 0, 0.3)' hidden='{{isHideCart}}'>
+
+  <view bindtap='BackToOrder' style='height:100%'></view>
+  <view class='cartDetail'>
+    <view class='cartBar'>
+    <text class='pull-left'>购物车</text>
+    <text class='pull-right' bindtap='cleanCart'>清空</text>
+    </view>
+    <view class='cartItem' wx:for='{{NowCart}}' wx:key='{{index}}'>
+      <text class='pull-left'>{{item.name}}</text>
+      <text>{{item.price}}/{{item.unit}}</text>
+      <text class='pull-right' data-id='{{item.id}}' data-index='{{index}}' bindtap='delItem'>删除</text>
+    </view>
+    
+
+  </view>
+</view>
+<!--下一步按钮  -->
+<view class='footer' hidden='{{isShowFooter}}'>
+  <view class='cartInfo'>
+    <label class='cart' bindtap='bindCart'>{{cartNum}}</label>
+    <text style='margin-left:10px;margin-right:10px;'>价格:<text style='color:#cd5c5c'> ￥{{totalFee}}</text></text>
+  </view>
+  <view class='OrderBtn'>
+    <text class='NextBtn' bindtap='clickNext'>下一步</text>
+  </view>
+</view>

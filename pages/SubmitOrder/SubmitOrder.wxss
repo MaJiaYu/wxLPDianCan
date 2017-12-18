@@ -1,0 +1,33 @@
+/* pages/SubmitOrder/SubmitOrder.wxss */
+
+.InfoPart {
+  width: 100%;
+  position: relative;
+  color: gray;
+  font-size: medium;
+}
+
+.infoShow {
+  margin-top: 5px;
+  display: block;
+  position: relative;
+  background-color: white;
+  color: gray;
+  font-size: medium;
+  height: 35px;
+  line-height: 35px;
+}
+
+.payBtn {
+  background-color: #cd5c5c;
+  color: white;
+  width: 30%;
+  position: absolute;
+  height: 40px;
+  right: 0;
+  font-size: medium;
+  display: inline-block;
+}
+.text{
+  margin-left: 5px;
+}

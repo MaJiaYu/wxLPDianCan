@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/OrderDishes/OrderDishes",
+    "pages/SubmitOrder/SubmitOrder",
+    "pages/MakeSureOrder/MakeSureOrder",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#CD5C5C",
+    "navigationBarTitleText": "微达点餐系统",
+    "navigationBarTextStyle": "white"
+  }
+}
+
